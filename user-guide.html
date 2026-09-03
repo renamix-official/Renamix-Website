@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Guide — Renamix</title>
+  <meta name="description" content="Learn how to select files, build renaming rules, preview changes, and rename large batches of files with Renamix." />
+
+  <link rel="icon" href="favicon.ico" sizes="any" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/user-guide.css" />
+</head>
+<body>
+  <a class="skip-link" href="#guide-main">Skip to content</a>
+  <div class="bg-field" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true"></span>
+        Renamix
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html#features">Features</a>
+        <a href="index.html#how-it-works">How it works</a>
+        <a href="index.html#screenshots">Screenshots</a>
+        <a href="user-guide.html">User Guide</a>
+        <a href="index.html#faq">FAQ</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn btn-primary btn-sm" href="index.html#pricing">Get Renamix</a>
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobile-menu">
+      <ul>
+        <li><a href="index.html#features">Features</a></li>
+        <li><a href="index.html#how-it-works">How it works</a></li>
+        <li><a href="index.html#screenshots">Screenshots</a></li>
+        <li><a href="user-guide.html">User Guide</a></li>
+        <li><a href="index.html#faq">FAQ</a></li>
+      </ul>
+      <a class="btn btn-primary" href="index.html#pricing">Get Renamix</a>
+    </div>
+  </header>
+
+  <main id="guide-main">
+    <section class="guide-hero">
+      <div class="wrap">
+        <p class="section-kicker">User Guide</p>
+        <h1>Learn how Renamix works.</h1>
+        <p>A short, practical walkthrough of every step from opening the app to renaming your first batch of files.</p>
+      </div>
+    </section>
+
+    <div class="wrap guide-layout">
+      <aside class="guide-nav" aria-label="User guide sections">
+        <h2>On this page</h2>
+        <ul>
+          <li><a href="#introduction">Introduction</a></li>
+          <li><a href="#getting-started">Getting started</a></li>
+          <li><a href="#selecting-files">Selecting files</a></li>
+          <li><a href="#creating-rules">Creating rename rules</a></li>
+          <li><a href="#previewing">Previewing names</a></li>
+          <li><a href="#renaming">Renaming files</a></li>
+          <li><a href="#numbering">Sequential numbering</a></li>
+          <li><a href="#undo">Undo</a></li>
+          <li><a href="#filtering">Filtering files</a></li>
+        </ul>
+      </aside>
+
+      <article class="guide-content">
+
+        <section class="guide-section" id="introduction">
+          <h2>Introduction</h2>
+          <p>Renamix is a batch file renaming tool for Windows. Instead of renaming files one at a time, you build a small set of rules — a prefix, a text replacement, a case change — and apply them to as many files as you've selected, all in one pass.</p>
+          <p>Every rule shows you the result before it happens. Nothing is renamed until you confirm it, and a rename can be undone afterward if you change your mind.</p>
+        </section>
+
+        <section class="guide-section" id="getting-started">
+          <span class="step-index">Step 1</span>
+          <h2>Getting started</h2>
+          <p>Open Renamix. The window is split into two areas: your file list on the left, and the active rename rules on the right. There's nothing to configure before you begin — you can start selecting files immediately.</p>
+        </section>
+
+        <section class="guide-section" id="selecting-files">
+          <span class="step-index">Step 2</span>
+          <h2>Selecting files</h2>
+          <p>Add files to Renamix in either of two ways:</p>
+          <ul class="guide-list">
+            <li><strong>Drag and drop</strong> — drag a folder or a group of files directly into the Renamix window.</li>
+            <li><strong>Browse</strong> — use the file picker to select a folder or individual files.</li>
+          </ul>
+          <p>Once files are loaded, they appear in the file list with checkboxes so you can include or exclude individual files from the current operation.</p>
+        </section>
+
+        <section class="guide-section" id="creating-rules">
+          <span class="step-index">Step 3</span>
+          <h2>Creating rename rules</h2>
+          <p>Rules are the core of Renamix. Each rule performs one operation on the filename, and you can stack multiple rules to run in sequence. Available rule types:</p>
+          <ul class="guide-list">
+            <li><strong>Prefix</strong> — add text to the start of each filename.</li>
+            <li><strong>Suffix</strong> — add text to the end of each filename, before the extension.</li>
+            <li><strong>Replace text</strong> — find a substring and replace it with something else.</li>
+            <li><strong>Remove text</strong> — strip a substring out of the filename entirely.</li>
+            <li><strong>Change case</strong> — convert to lowercase, UPPERCASE, Title Case, or sentence case.</li>
+            <li><strong>Extension handling</strong> — normalize or correct file extensions.</li>
+          </ul>
+
+          <div class="guide-example">
+            <div class="example-label">Example — Prefix rule</div>
+            <div class="example-row">
+              <span class="old">report.docx</span>
+              <span class="arrow">→</span>
+              <span class="new"><span class="diff">2026_</span>report.docx</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="guide-section" id="previewing">
+          <span class="step-index">Step 4</span>
+          <h2>Previewing names</h2>
+          <p>As you add or edit rules, the file list updates immediately to show the resulting filename for every selected file. Nothing on disk changes at this stage — the preview is purely informational, so you can adjust your rules freely until the result looks right.</p>
+          <div class="guide-note"><strong>Tip:</strong> if a rule would create a filename conflict (two files ending up with the same name), Renamix flags it in the preview so you can fix it before renaming.</div>
+        </section>
+
+        <section class="guide-section" id="renaming">
+          <span class="step-index">Step 5</span>
+          <h2>Renaming files</h2>
+          <p>Once the preview looks correct, select <strong>Rename files</strong>. Renamix applies your rules to every checked file in a single operation. A summary shows how many files were renamed.</p>
+        </section>
+
+        <section class="guide-section" id="numbering">
+          <h2>Sequential numbering</h2>
+          <p>For collections of similar files, Renamix can append a sequential number to each filename automatically. You control the starting number, the step between numbers, and how many digits to pad to.</p>
+          <div class="guide-example">
+            <div class="example-label">Example — Sequential numbering, start 1, pad 3</div>
+            <div class="example-row">
+              <span class="old">photo.jpg</span>
+              <span class="arrow">→</span>
+              <span class="new">photo_<span class="diff">001</span>.jpg</span>
+            </div>
+            <div class="example-row">
+              <span class="old">photo.jpg</span>
+              <span class="arrow">→</span>
+              <span class="new">photo_<span class="diff">002</span>.jpg</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="guide-section" id="undo">
+          <h2>Undo</h2>
+          <p>If a batch rename doesn't turn out the way you expected, use <strong>Undo</strong> to revert the most recent rename operation back to the original filenames. This works even after closing and reopening the file list, as long as the files haven't been moved or renamed by something else in the meantime.</p>
+        </section>
+
+        <section class="guide-section" id="filtering">
+          <h2>Filtering files</h2>
+          <p>When working with a large folder, use filters to narrow the file list down to just the files you want to rename — for example, only files of a certain type, or only files whose names match a pattern. Filtered-out files stay untouched by any rule you apply.</p>
+        </section>
+
+      </article>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="brand" href="index.html">
+            <span class="brand-mark" aria-hidden="true"></span>
+            Renamix
+          </a>
+          <p>Powerful file renaming. Made simple.</p>
+        </div>
+
+        <div class="footer-cols">
+          <div class="footer-col">
+            <h4>Product</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html#features">Features</a></li>
+              <li><a href="index.html#screenshots">Screenshots</a></li>
+              <li><a href="index.html#pricing">Pricing</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="user-guide.html">User Guide</a></li>
+              <li><a href="index.html#faq">FAQ</a></li>
+              <li><a href="mailto:hello@renamix.app">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Elsewhere</h4>
+            <ul>
+              <li><a href="https://github.com" target="_blank" rel="noopener">GitHub</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Renamix. All rights reserved.</span>
+        <a href="mailto:hello@renamix.app">hello@renamix.app</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/user-guide.js"></script>
+</body>
+</html>
