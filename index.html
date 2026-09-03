@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Renamix — Simple. Powerful. Batch Renaming.</title>
+  <meta name="description" content="Renamix is a simple and powerful batch file renaming tool for Windows." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Renamix — Simple. Powerful. Batch Renaming." />
+  <meta property="og:description" content="Renamix is a simple and powerful batch file renaming tool for Windows." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/logo/renamix-logo-full.png" />
+  <meta property="og:url" content="https://renamix.example.com/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Renamix — Simple. Powerful. Batch Renaming." />
+  <meta name="twitter:description" content="Renamix is a simple and powerful batch file renaming tool for Windows." />
+  <meta name="twitter:image" content="assets/logo/renamix-logo-full.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="assets/logo/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/logo/icon-32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/logo/icon-192.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/logo/icon-180.png" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="nav-brand" href="index.html" aria-label="Renamix home">
+        <img src="assets/logo/renamix-icon.png" alt="" width="30" height="24" />
+        <span class="nav-brand-name">Renamix</span>
+      </a>
+
+      <nav id="primary-nav" class="nav-links" aria-label="Primary">
+        <a href="#features">Features</a>
+        <a href="#screenshots">Screenshots</a>
+        <a href="user-guide.html">User Guide</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn-primary" href="#pricing">Get Renamix — $5</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1>Rename Files.<br />Faster.</h1>
+          <p class="lede">Renamix is a simple and powerful batch file renaming tool designed to make managing large numbers of files fast, easy, and reliable.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary btn-large" href="#pricing">Get Renamix — $5</a>
+            <a class="btn btn-secondary btn-large" href="#features">View Features</a>
+          </div>
+          <div class="hero-meta">
+            <span class="hero-meta-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/></svg>
+              Windows desktop app
+            </span>
+            <span class="hero-meta-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+              One-time purchase
+            </span>
+            <span class="hero-meta-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+              No installs required for Java
+            </span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="app-preview" role="img" aria-label="Renamix application preview showing a rename pattern applied to a list of files, changing IMG_0294.jpg to Summer_Trip_001.jpg and similar names">
+            <div class="app-preview-bar">
+              <span class="app-preview-dot"></span>
+              <span class="app-preview-dot"></span>
+              <span class="app-preview-dot"></span>
+              <span class="app-preview-title">Renamix — Batch Rename</span>
+            </div>
+            <div class="app-preview-body">
+              <div class="pattern-row">
+                <span class="static">Pattern:</span>
+                <span>{name-prefix}_{counter:000}.{ext}</span>
+              </div>
+              <div class="rename-table">
+                <div class="rename-row">
+                  <span class="old-name">IMG_0294.jpg</span>
+                  <span class="arrow">→</span>
+                  <span class="new-name">Summer_Trip_001.jpg</span>
+                </div>
+                <div class="rename-row">
+                  <span class="old-name">IMG_0295.jpg</span>
+                  <span class="arrow">→</span>
+                  <span class="new-name">Summer_Trip_002.jpg</span>
+                </div>
+                <div class="rename-row is-new">
+                  <span class="old-name">IMG_0296.jpg</span>
+                  <span class="arrow">→</span>
+                  <span class="new-name">Summer_Trip_003.jpg</span>
+                </div>
+                <div class="rename-row">
+                  <span class="old-name">IMG_0297.jpg</span>
+                  <span class="arrow">→</span>
+                  <span class="new-name">Summer_Trip_004.jpg</span>
+                </div>
+              </div>
+            </div>
+            <div class="app-preview-footer">
+              <span><strong>247</strong> files ready</span>
+              <span>Preview updates instantly</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features">
+      <div class="container">
+        <div class="section-heading center">
+          <h2>Everything you need to rename files</h2>
+          <p>Renamix covers the renaming tasks people actually run into — no bloat, no clutter.</p>
+        </div>
+
+        <div class="feature-grid">
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7l8-4 8 4-8 4-8-4z"/><path d="M4 12l8 4 8-4"/><path d="M4 17l8 4 8-4"/></svg>
+            </div>
+            <h3>Batch Renaming</h3>
+            <p>Select hundreds or thousands of files and rename them all in a single pass.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7z"/><circle cx="12" cy="12" r="3"/></svg>
+            </div>
+            <h3>Live Name Preview</h3>
+            <p>See exactly what every new filename will look like before anything is renamed.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="10" y1="6" x2="21" y2="6"/><line x1="10" y1="12" x2="21" y2="12"/><line x1="10" y1="18" x2="21" y2="18"/><path d="M4 6h1v4"/><path d="M4 10h2"/><path d="M6 18H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg>
+            </div>
+            <h3>Sequential Numbering</h3>
+            <p>Add auto-incrementing numbers with custom start values, padding, and step size.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7V5a1 1 0 0 1 1-1h2"/><path d="M4 17v2a1 1 0 0 0 1 1h2"/><path d="M20 7V5a1 1 0 0 0-1-1h-2"/><path d="M20 17v2a1 1 0 0 1-1 1h-2"/><line x1="9" y1="12" x2="15" y2="12"/></svg>
+            </div>
+            <h3>Prefix &amp; Suffix</h3>
+            <p>Add text before or after the original filename without retyping everything.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="6"/><line x1="14.5" y1="14.5" x2="20" y2="20"/><path d="M14 6l2 2-2 2"/></svg>
+            </div>
+            <h3>Replace &amp; Remove Text</h3>
+            <p>Find and replace text anywhere in a filename, or strip unwanted characters entirely.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17V7l4 10 4-10v10"/><path d="M15 7h5"/><path d="M17.5 7v10"/></svg>
+            </div>
+            <h3>Change Case</h3>
+            <p>Convert filenames to UPPERCASE, lowercase, Title Case, or Sentence case.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3v5h5"/><path d="M6 3h8l5 5v13H6z"/><path d="M9 15h6"/></svg>
+            </div>
+            <h3>Extension Control</h3>
+            <p>Change, add, or remove file extensions across your entire selection at once.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h18l-7 9v6l-4 2v-8z"/></svg>
+            </div>
+            <h3>File Filtering</h3>
+            <p>Narrow the file list by name, extension, or pattern before you rename anything.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11a8 8 0 1 1 2.5 6"/><path d="M3 4v6h6"/></svg>
+            </div>
+            <h3>Undo Renaming</h3>
+            <p>Made a mistake? Reverse your last batch rename and restore the original names.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8z"/></svg>
+            </div>
+            <h3>Fast Processing</h3>
+            <p>Built to handle large folders quickly, even with thousands of files selected.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section id="how-it-works">
+      <div class="container">
+        <div class="section-heading center">
+          <h2>Three steps from messy to organized</h2>
+          <p>No configuration files, no scripting — just a straightforward workflow.</p>
+        </div>
+
+        <div class="steps">
+          <div class="step">
+            <span class="step-number">01</span>
+            <h3>Select your files</h3>
+            <p>Choose a folder or drag in individual files. Filter by name or extension if you only need a subset.</p>
+          </div>
+          <div class="step">
+            <span class="step-number">02</span>
+            <h3>Customize the new names</h3>
+            <p>Add a prefix, suffix, sequential numbers, or replace text. Combine as many rules as you need.</p>
+          </div>
+          <div class="step">
+            <span class="step-number">03</span>
+            <h3>Preview and rename</h3>
+            <p>Check the live preview, confirm it looks right, and apply the rename to every file at once.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCREENSHOTS -->
+    <section id="screenshots">
+      <div class="container">
+        <div class="section-heading center">
+          <h2>See Renamix in action</h2>
+          <p>A closer look at the interface.</p>
+        </div>
+
+        <div class="screenshot-grid">
+          <figure class="screenshot-card">
+            <img src="assets/screenshots/placeholder-main-window.svg" alt="Placeholder — Renamix main window screenshot not yet added" width="800" height="500" loading="lazy" />
+            <figcaption class="screenshot-caption">Main window — file list and rename rules</figcaption>
+          </figure>
+          <figure class="screenshot-card">
+            <img src="assets/screenshots/placeholder-preview.svg" alt="Placeholder — Renamix live preview screenshot not yet added" width="800" height="500" loading="lazy" />
+            <figcaption class="screenshot-caption">Live preview of new filenames</figcaption>
+          </figure>
+          <figure class="screenshot-card">
+            <img src="assets/screenshots/placeholder-filters.svg" alt="Placeholder — Renamix filtering screenshot not yet added" width="800" height="500" loading="lazy" />
+            <figcaption class="screenshot-caption">Filtering and sequential numbering options</figcaption>
+          </figure>
+        </div>
+
+        <p class="screenshot-note">These are placeholder graphics. Replace the files in <code>assets/screenshots/</code> with real Renamix screenshots — keep the same filenames or update the <code>src</code> attributes in <code>index.html</code>.</p>
+      </div>
+    </section>
+
+    <!-- USER GUIDE TEASER -->
+    <section id="user-guide">
+      <div class="container guide-teaser">
+        <div class="guide-list">
+          <div class="section-heading" style="margin-bottom: 24px;">
+            <h2>User guide</h2>
+            <p>A complete walkthrough of every step, from opening a folder to undoing a rename.</p>
+          </div>
+
+          <div class="guide-list-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h18l-7 9v6l-4 2v-8z"/></svg>
+            <div>
+              <h4>Getting started &amp; selecting files</h4>
+              <p>Open Renamix and load the files you want to rename.</p>
+            </div>
+          </div>
+          <div class="guide-list-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7V5a1 1 0 0 1 1-1h2"/><path d="M4 17v2a1 1 0 0 0 1 1h2"/><path d="M20 7V5a1 1 0 0 0-1-1h-2"/><path d="M20 17v2a1 1 0 0 1-1 1h-2"/><line x1="9" y1="12" x2="15" y2="12"/></svg>
+            <div>
+              <h4>Building a rename pattern</h4>
+              <p>Combine prefixes, suffixes, numbering, and text replacement.</p>
+            </div>
+          </div>
+          <div class="guide-list-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11a8 8 0 1 1 2.5 6"/><path d="M3 4v6h6"/></svg>
+            <div>
+              <h4>Previewing, renaming &amp; undo</h4>
+              <p>Confirm the result, apply it, and reverse it if something looks off.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="guide-panel">
+          <h3>Read the full guide</h3>
+          <p>The complete user guide covers every feature step by step, including troubleshooting tips for common issues.</p>
+          <a class="btn btn-primary btn-block" href="user-guide.html">Open the User Guide</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+      <div class="container">
+        <div class="section-heading center">
+          <h2>Frequently asked questions</h2>
+          <p>Can't find what you're looking for? Reach out through the contact link in the footer.</p>
+        </div>
+
+        <div class="accordion">
+          <details class="accordion-item" name="faq">
+            <summary>What is Renamix?<span class="plus"></span></summary>
+            <div class="accordion-body">
+              <p>Renamix is a desktop application for Windows that renames many files at once. It's built for people who regularly need to organize photos, documents, or other files in bulk.</p>
+            </div>
+          </details>
+
+          <details class="accordion-item" name="faq">
+            <summary>How much does Renamix cost?<span class="plus"></span></summary>
+            <div class="accordion-body">
+              <p>Renamix is a one-time purchase of $5. There are no subscriptions or recurring fees.</p>
+            </div>
+          </details>
+
+          <details class="accordion-item" name="faq">
+            <summary>Does Renamix work on Windows?<span class="plus"></span></summary>
+            <div class="accordion-body">
+              <p>Yes. Renamix is designed as a Windows desktop application. Specific supported Windows versions will be listed here once finalized.</p>
+            </div>
+          </details>
+
+          <details class="accordion-item" name="faq">
+            <summary>Can I rename multiple files at once?<span class="plus"></span></summary>
+            <div class="accordion-body">
+              <p>Yes — batch renaming many files in a single operation is the core purpose of Renamix.</p>
+            </div>
+          </details>
+
+          <details class="accordion-item" name="faq">
+            <summary>Do I need Java installed?<span class="plus"></span></summary>
+            <div class="accordion-body">
+              <p>Additional requirements, if any, will be listed here once finalized.</p>
+            </div>
+          </details>
+
+          <details class="accordion-item" name="faq">
+            <summary>Can I undo a rename?<span class="plus"></span></summary>
+            <div class="accordion-body">
+              <p>Yes, Renamix includes an undo feature that can reverse your most recent batch rename.</p>
+            </div>
+          </details>
+
+          <details class="accordion-item" name="faq">
+            <summary>How do I get updates?<span class="plus"></span></summary>
+            <div class="accordion-body">
+              <p>Update details will be provided here once finalized.</p>
+            </div>
+          </details>
+
+          <details class="accordion-item" name="faq">
+            <summary>Where can I get support?<span class="plus"></span></summary>
+            <div class="accordion-body">
+              <p>Support contact details will be added here once finalized. In the meantime, use the Contact link in the footer.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing">
+      <div class="container">
+        <div class="section-heading center">
+          <h2>Get Renamix</h2>
+          <p>One simple price. No subscriptions.</p>
+        </div>
+
+        <div class="pricing-card">
+          <p class="product-name">Renamix</p>
+          <p class="price"><sup>$</sup>5</p>
+          <p class="price-note">One-time purchase</p>
+
+          <ul class="pricing-list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+              Windows desktop application
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+              Batch file renaming
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+              Future updates
+            </li>
+          </ul>
+
+          <!--
+            Replace this href with your Lemon Squeezy checkout URL when ready,
+            e.g. https://your-store.lemonsqueezy.com/checkout/buy/xxxxxxxx
+          -->
+          <a class="btn btn-primary btn-block btn-large" href="#" data-checkout-link>Buy Renamix</a>
+          <p class="pricing-fineprint">Secure checkout is provided by a third-party payment processor at launch.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="final-cta">
+      <div class="container">
+        <h2>Ready to rename smarter?</h2>
+        <p>Make batch file renaming simple with Renamix.</p>
+        <a class="btn btn-primary btn-large" href="#pricing">Get Renamix — $5</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="assets/logo/renamix-logo-full.png" alt="Renamix" />
+          <p>Simple. Powerful. Batch Renaming.</p>
+        </div>
+
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>Product</h4>
+            <ul>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#screenshots">Screenshots</a></li>
+              <li><a href="user-guide.html">User Guide</a></li>
+              <li><a href="#faq">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Connect</h4>
+            <ul>
+              <li><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+              <li><a href="https://www.youtube.com/" target="_blank" rel="noopener">YouTube</a></li>
+              <li><a href="mailto:support@example.com">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 Renamix. All rights reserved.</span>
+        <span>Built for Windows.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
